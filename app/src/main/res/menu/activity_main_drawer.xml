@@ -5,31 +5,29 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_principal"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_principal" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_servicos"
+            android:icon="@drawable/ic_baseline_assignment_24"
+            android:title="@string/menu_servicos" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/ic_baseline_supervisor_account_24"
+            android:title="@string/menu_clientes" />
     </group>
 
     <item android:title="Entre em contato">
         <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/nav_contact"
-                    android:icon="@android:drawable/sym_action_email"
-                    android:title="@string/menu_slideshow" />
-                <item
-                    android:id="@+id/nav_about"
-                    android:icon="@android:drawable/ic_dialog_info"
-                    android:title="@string/menu_slideshow" />
-            </group>
+            <item
+                android:id="@+id/nav_contato"
+                android:icon="@android:drawable/sym_action_email"
+                android:title="@string/menu_contato" />
+            <item
+                android:id="@+id/nav_sobre"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="@string/menu_sobre" />
         </menu>
     </item>
 </menu>
