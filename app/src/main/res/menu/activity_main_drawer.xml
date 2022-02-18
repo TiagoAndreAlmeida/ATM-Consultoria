@@ -19,15 +19,20 @@
     </group>
 
     <item android:title="Entre em contato">
-        <menu>
-            <item
-                android:id="@+id/nav_contato"
-                android:icon="@android:drawable/sym_action_email"
-                android:title="@string/menu_contato" />
-            <item
-                android:id="@+id/nav_sobre"
-                android:icon="@android:drawable/ic_dialog_info"
-                android:title="@string/menu_sobre" />
-        </menu>
+
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_contato"
+                    android:icon="@android:drawable/sym_action_email"
+                    android:title="@string/menu_contato" />
+                <item
+                    android:id="@+id/nav_sobre"
+                    android:icon="@android:drawable/ic_dialog_info"
+                    android:title="@string/menu_sobre" />
+                </group>
+            </menu>
+
+
     </item>
 </menu>
