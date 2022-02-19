@@ -7,8 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.atmconsultoria.R;
+
+import mehdi.sakout.aboutpage.AboutPage;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +64,19 @@ public class SobreFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sobre, container, false);
+//        return inflater.inflate(R.layout.fragment_sobre, container, false);
+        View view = new AboutPage(getActivity(), false)
+                .setImage(R.drawable.logo)
+                .addGroup("Connect with us")
+                .addWebsite("https://google.com/")
+                .addTwitter("17Thyago")
+                .addGitHub("TiagoAndreAlmeida")
+                .addInstagram("medyo80")
+                .create();
+
+        TextView descriptionTextView = view.findViewById(R.id.description);
+        descriptionTextView.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
+
+        return view;
     }
 }
